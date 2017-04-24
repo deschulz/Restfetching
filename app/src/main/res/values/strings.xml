@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Restfetching</string>
+    <string name="label">Pick a language</string>
+</resources>

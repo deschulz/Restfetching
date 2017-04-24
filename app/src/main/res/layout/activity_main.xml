@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESTful Dictionary Looker-Upper"
+        android:layout_centerHorizontal="true"
+         />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/language"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/language"
+        android:layout_alignStart="@+id/language"
+        android:layout_below="@+id/progressBar"
+        android:background="@android:drawable/btn_dropdown"
+        android:gravity="center_horizontal"
+        android:spinnerMode="dropdown" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:id="@+id/dictview"
+        android:layout_below="@+id/spinner">
+    </ListView>
+
+</RelativeLayout>
